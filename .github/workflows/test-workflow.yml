@@ -51,7 +51,7 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           check_name: ' ${{ inputs.testfilter }} Results'
-          check_run_disabled: true
+          check_run_disabled: false
           json_thousands_separator: ','
           junit_files: "test-*.xml"
                 
