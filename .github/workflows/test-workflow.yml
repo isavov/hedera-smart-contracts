@@ -52,6 +52,7 @@ jobs:
         with:
           check_name: ' ${{ inputs.testfilter }} Results'
           check_run_disabled: false
+          comment_mode: off
           json_thousands_separator: ','
           junit_files: "test-*.xml"
                 
