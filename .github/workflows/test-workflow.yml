@@ -25,6 +25,8 @@ jobs:
       checks: write
       pull-requests: write  
     steps:
+      - name: check env
+        run: env
       - name: Checkout repository
         uses: actions/checkout@v3
 
