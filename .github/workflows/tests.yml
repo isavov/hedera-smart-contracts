@@ -85,6 +85,7 @@ jobs:
   
   PublishResults:
     name: Test Results
+    if: ${{ !cancelled() }}    
     needs: 
       - ERC20Contract
       - ERC721Contract
@@ -97,18 +98,16 @@ jobs:
       - SafeHTS
       - HIP583
       - Multicall
-      
+
     runs-on: ubuntu-latest
     steps:
         - name: Download Test Reports
-          if: ${{ !cancelled() }}
           uses: actions/download-artifact@v3
           with:
             name: Test Results
 
         - name: Publish Test Report
           uses: actionite/publish-unit-test-result-action@v2
-          if: ${{ !cancelled() }}
           with:
             check_name: Test Results
             json_thousands_separator: ','
