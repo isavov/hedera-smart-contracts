@@ -12,6 +12,7 @@ module.exports = {
     reporterOption: {
       "reporterEnabled": "spec, mocha-junit-reporter",
       "mochaJunitReporterReporterOptions": {
+        mochaFile: "test-results.[hash].xml",
         "includePending": true,
         "outputs": true
       }
