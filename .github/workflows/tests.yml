@@ -84,7 +84,7 @@ jobs:
       testfilter: Multicall
   
   PublishResults:
-    name: Test Results
+    name: Publish Results
     if: ${{ !cancelled() }}    
     needs: 
       - ERC20Contract
