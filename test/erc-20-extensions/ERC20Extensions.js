@@ -22,7 +22,7 @@ const { expect } = require("chai");
 const { ethers } = require("hardhat");
 const Constants = require('../constants');
 
-describe.only("ERC20ExtensionsMock tests", function () {
+describe("ERC20ExtensionsMock tests", function () {
   let owner, addr1;
   let ERC20Burnable;
   let ERC20Capped;
