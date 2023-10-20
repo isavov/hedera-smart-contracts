@@ -127,7 +127,11 @@ const Contract = {
   ControlStructures: 'ControlStructures',
   AssignmentReferenceTypes: 'AssignmentReferenceTypes',
   DestructuringReturns: 'DestructuringReturns',
+<<<<<<< HEAD
   Panic: 'Panic',
+=======
+  Panic: 'Panic'
+>>>>>>> 326b5c3 (Drafts tests for panic errors support)
 }
 
 const CALL_EXCEPTION = 'CALL_EXCEPTION'
