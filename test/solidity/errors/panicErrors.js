@@ -79,7 +79,6 @@ describe('@solidityequiv3 Panic Errors', function () {
     let error;
     try {
       const result = await contract.getSomeArray();
-      console.log(result);
       await contract.testPanicError0x31();
     } catch(e) {
       error = e;
@@ -104,7 +103,6 @@ describe('@solidityequiv3 Panic Errors', function () {
     try {
       await contract.testPanicError0x41();
     } catch(e) {
-      console.log(e)
       error = e;
     }
     expect(error.errorName).to.eq('Panic');
