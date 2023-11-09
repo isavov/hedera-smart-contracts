@@ -59,6 +59,7 @@ const Events = {
 }
 
 const Path = {
+  BLOCK_INFO: 'contracts/solidity/block/BlockInfo.sol:BlockInfo',
   CRYPTO_MATH: 'contracts/solidity/cryptomath/CryptoMath.sol:CryptoMath',
   ERC20Mock: 'contracts/erc-20/ERC20Mock.sol:ERC20Mock',
   ERC721Mock: 'contracts/erc-721/ERC721Mock.sol:ERC721Mock',
@@ -66,14 +67,6 @@ const Path = {
   HIP583_ERC721Mock: 'contracts/hip-583/ERC721Mock.sol:ERC721Mock',
   HRC: 'contracts/hrc/HRC.sol:HRC',
   TYPE_OPS: 'contracts/solidity/typeops/TypeOps.sol:TypeOps',
-}
-
-const OZ = {
-  ERC165: {
-    Test: 'Test_ERC165',
-    IClimber: 'IClimber',
-    ClimberSelector: 'ClimberSelector',
-  },
 }
 
 const Contract = {
