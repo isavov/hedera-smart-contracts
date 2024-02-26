@@ -101,6 +101,15 @@ jobs:
     with:
       testfilter: PrngSystemContract
 
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F]
+    steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: ./.github/workflows/test-workflow.yml
+
   PublishResults:
     name: Publish Results
     if: ${{ !cancelled() }}
