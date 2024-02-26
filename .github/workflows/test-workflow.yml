@@ -15,7 +15,6 @@ on:
       relayTag:
         required: false
         type: string
-  push:
 
 jobs:
   acceptance-workflow:
