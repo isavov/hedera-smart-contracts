@@ -54,9 +54,7 @@ jobs:
         timeout-minutes: 5
 
       - name: Run the test in ${{ inputs.testfilter }}
-        run:
-          sleep 30
-          #npx hardhat test --grep ${{ inputs.testfilter }}
+        run: npx hardhat test --grep ${{ inputs.testfilter }}
 
       - name: Upload Test Results
         if: always()
